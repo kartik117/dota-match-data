@@ -220,6 +220,10 @@ def main():
                for h in histories}
     output = build(histories, details, int(fetch.ACCOUNT))
     fetch.save(fetch.OUT / 'analysis' / 'last50.json', output, compact=True)
+    import report
+    import stories
+    report.write(output, fetch.OUT, stories.load_names(fetch.OUT))
+    stories.write(histories, details, fetch.OUT, int(fetch.ACCOUNT), output['generated_at_utc'])
     print('Analysis coverage:', output['coverage'], flush=True)
 
 

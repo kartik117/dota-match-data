@@ -1,6 +1,11 @@
 name: Sync OpenDota matches
 on:
   workflow_dispatch:
+    inputs:
+      refresh_opendota:
+        description: Fetch OpenDota before regenerating analysis and stories
+        type: boolean
+        default: true
   schedule:
     - cron: '17 */6 * * *'
 permissions:
@@ -26,7 +31,11 @@ jobs:
       - name: Test sync error handling
         run: python -m unittest discover -s tests -v
       - name: Download public match statistics
+        if: github.event_name != 'workflow_dispatch' || inputs.refresh_opendota
         run: python -u scripts/fetch.py
+      - name: Regenerate analysis and stories from cache
+        if: github.event_name == 'workflow_dispatch' && !inputs.refresh_opendota
+        run: python scripts/analysis.py
       - name: Validate generated data
         run: python scripts/validate.py
       - name: Commit latest data

@@ -3,3 +3,4 @@ __pycache__/
 *.json.tmp
 .DS_Store
 .venv/
+*.md.tmp

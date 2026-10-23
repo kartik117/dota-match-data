@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "account_id": 467233306,
+  "generated_at_utc": "2026-10-23T02:51:38.841581+00:00",
+  "priority_match_id": 9057336754,
+  "ranked_matches_considered": 50,
+  "story_count": 11,
+  "stories": [
+    {
+      "match_id": 9057336754,
+      "hero": "Luna",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9057336754.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9057336754.md",
+      "bytes": 292685,
+      "sha256": "bef1b543d0c86eee1763c14e2851b68a3ff5e308f2cdf4915182897c3642fd68",
+      "event_count": 246,
+      "event_counts": {
+        "death": 115,
+        "objective": 1,
+        "major_item": 83,
+        "tower": 13,
+        "teamfight": 15,
+        "buyback": 8,
+        "aegis": 2,
+        "roshan": 2,
+        "barracks": 6,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 6,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    },
+    {
+      "match_id": 9057235675,
+      "hero": "Lifestealer",
+      "outcome": "win",
+      "account_id": 467233306,
+      "path": "data/stories/9057235675.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9057235675.md",
+      "bytes": 219157,
+      "sha256": "2562607eacccd68bf3c323b49faa734d206832638087a37a96f98ea4c3697bdf",
+      "event_count": 182,
+      "event_counts": {
+        "objective": 5,
+        "death": 87,
+        "teamfight": 13,
+        "major_item": 50,
+        "tower": 13,
+        "aegis": 2,
+        "roshan": 2,
+        "buyback": 5,
+        "barracks": 4,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 1,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    },
+    {
+      "match_id": 9057185582,
+      "hero": "Luna",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9057185582.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9057185582.md",
+      "bytes": 281269,
+      "sha256": "f9c5593a330870391a0919f9af15a18eabbd923010beee24699fff47f56f51a5",
+      "event_count": 201,
+      "event_counts": {
+        "death": 103,
+        "objective": 6,
+        "teamfight": 16,
+        "major_item": 56,
+        "tower": 12,
+        "barracks": 5,
+        "buyback": 2,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 13,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    },
+    {
+      "match_id": 9057123958,
+      "hero": "Luna",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9057123958.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9057123958.md",
+      "bytes": 215932,
+      "sha256": "4e64cb673c63c115cd32fed65cae0f66f313092232c8306e414e7016761abd46",
+      "event_count": 168,
+      "event_counts": {
+        "death": 76,
+        "objective": 8,
+        "teamfight": 11,
+        "major_item": 51,
+        "tower": 13,
+        "barracks": 6,
+        "roshan": 1,
+        "aegis": 1,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 11,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    },
+    {
+      "match_id": 9057039065,
+      "hero": "Drow Ranger",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9057039065.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9057039065.md",
+      "bytes": 233775,
+      "sha256": "30d224c3dc01d09960f886dfe93c1f1b66a3143ff4304e809d3e0613acab3ed4",
+      "event_count": 188,
+      "event_counts": {
+        "death": 81,
+        "objective": 4,
+        "major_item": 65,
+        "tower": 15,
+        "teamfight": 10,
+        "buyback": 4,
+        "roshan": 1,
+        "aegis": 1,
+        "barracks": 6,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 14,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    },
+    {
+      "match_id": 9056356295,
+      "hero": "Ogre Magi",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9056356295.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9056356295.md",
+      "bytes": 259118,
+      "sha256": "c0f48d95446722e3739c04a051ef1461171eb5721706b49ffd0390b993d99fde",
+      "event_count": 219,
+      "event_counts": {
+        "death": 110,
+        "objective": 7,
+        "major_item": 59,
+        "teamfight": 11,
+        "tower": 14,
+        "roshan": 2,
+        "aegis": 2,
+        "buyback": 7,
+        "barracks": 6,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 11,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    },
+    {
+      "match_id": 9056324665,
+      "hero": "Doom",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9056324665.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9056324665.md",
+      "bytes": 158252,
+      "sha256": "502a20d169f7a4f0ce228f1dedea790e7fa45cebda435cb1991caa9e46d21ff3",
+      "event_count": 118,
+      "event_counts": {
+        "death": 50,
+        "objective": 5,
+        "major_item": 38,
+        "tower": 11,
+        "teamfight": 5,
+        "barracks": 6,
+        "buyback": 2,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 17,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    },
+    {
+      "match_id": 9056278418,
+      "hero": "Warlock",
+      "outcome": "win",
+      "account_id": 467233306,
+      "path": "data/stories/9056278418.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9056278418.md",
+      "bytes": 186453,
+      "sha256": "ac7700f0b2bdd813a364c14c498e6aeb18ca62de38ce144ec57e05d34e209b9b",
+      "event_count": 179,
+      "event_counts": {
+        "death": 62,
+        "objective": 6,
+        "major_item": 71,
+        "teamfight": 8,
+        "tower": 18,
+        "roshan": 1,
+        "aegis": 1,
+        "buyback": 4,
+        "barracks": 7,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 2,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    },
+    {
+      "match_id": 9056246052,
+      "hero": "Anti-Mage",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9056246052.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9056246052.md",
+      "bytes": 189105,
+      "sha256": "3893fddc53b3496daf99115276802a1c8fcda988f849fa22a891dc5d5ae59e55",
+      "event_count": 138,
+      "event_counts": {
+        "objective": 5,
+        "death": 58,
+        "teamfight": 10,
+        "major_item": 40,
+        "tower": 15,
+        "buyback": 1,
+        "barracks": 6,
+        "roshan": 1,
+        "aegis": 1,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 11,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    },
+    {
+      "match_id": 9056199662,
+      "hero": "Anti-Mage",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9056199662.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9056199662.md",
+      "bytes": 287639,
+      "sha256": "a674b6d9bf5b9e9f111abf2fc72aee31b0804a142b89580cbc7aa1f03cea01a1",
+      "event_count": 206,
+      "event_counts": {
+        "major_item": 59,
+        "death": 96,
+        "objective": 3,
+        "teamfight": 18,
+        "tower": 17,
+        "roshan": 1,
+        "aegis": 1,
+        "barracks": 6,
+        "buyback": 4,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 12,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    },
+    {
+      "match_id": 9056167322,
+      "hero": "Luna",
+      "outcome": "win",
+      "account_id": 467233306,
+      "path": "data/stories/9056167322.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9056167322.md",
+      "bytes": 194766,
+      "sha256": "3e3cb1cdb2da64a6800d4f276b73aff1f4688a2ce914909ea5618a74f91cb7c7",
+      "event_count": 178,
+      "event_counts": {
+        "death": 78,
+        "objective": 9,
+        "teamfight": 10,
+        "major_item": 57,
+        "tower": 14,
+        "buyback": 1,
+        "barracks": 6,
+        "aegis": 1,
+        "roshan": 1,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 0,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    }
+  ],
+  "unavailable_matches": [
+    {
+      "match_id": 9056125893,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9056085481,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9055765910,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9055699048,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9055609160,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9055543084,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9054514051,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9054458370,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9054395109,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9054330601,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9054226495,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9051585509,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9051047933,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9050245677,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9049564611,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9048835066,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9048516424,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9048494322,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9048459723,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9048425722,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9048391677,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9048367544,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9048063835,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9047961193,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9047869924,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9046879117,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9046850228,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9046806312,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9046682643,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9046584325,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9045717152,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9045582858,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9045538079,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9045512460,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9026753968,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9025373130,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9025351404,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9024006387,
+      "reason": "parsed replay data or account player unavailable"
+    },
+    {
+      "match_id": 9022301205,
+      "reason": "parsed replay data or account player unavailable"
+    }
+  ],
+  "methodology": "Offline deterministic reconstruction from current latest-ranked cached files. Potential turning points are observed temporal patterns, not causal or mistake judgments. Archived stories are retained; this index lists only current-window stories."
+}
