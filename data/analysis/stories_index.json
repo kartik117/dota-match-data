@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "account_id": 467233306,
-  "generated_at_utc": "2026-10-23T02:54:30.204633+00:00",
+  "generated_at_utc": "2026-10-23T11:37:09.733795+00:00",
   "priority_match_id": 9057336754,
   "ranked_matches_considered": 50,
-  "story_count": 11,
+  "story_count": 14,
   "stories": [
     {
       "match_id": 9057336754,
@@ -341,21 +341,102 @@
         "missing_core_fields": [],
         "category": "full_replay"
       }
-    }
-  ],
-  "unavailable_matches": [
+    },
     {
       "match_id": 9056125893,
-      "reason": "parsed replay data or account player unavailable"
+      "hero": "Luna",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9056125893.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9056125893.md",
+      "bytes": 262490,
+      "sha256": "cf751b9f7a5f24018396b1f9aea06dfd666dacb8b3291fe2a99c5df7c23d14b4",
+      "event_count": 217,
+      "event_counts": {
+        "objective": 5,
+        "death": 92,
+        "major_item": 76,
+        "teamfight": 11,
+        "tower": 16,
+        "buyback": 6,
+        "barracks": 8,
+        "aegis": 1,
+        "roshan": 1,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 14,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
     },
     {
       "match_id": 9056085481,
-      "reason": "parsed replay data or account player unavailable"
+      "hero": "Anti-Mage",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9056085481.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9056085481.md",
+      "bytes": 217407,
+      "sha256": "dc274ad1abdf1f10ee89a8ea347dc0dab0b0a9d8981f1b3f4c5779805d153d1d",
+      "event_count": 183,
+      "event_counts": {
+        "death": 83,
+        "objective": 4,
+        "major_item": 61,
+        "teamfight": 10,
+        "tower": 13,
+        "barracks": 6,
+        "buyback": 3,
+        "aegis": 1,
+        "roshan": 1,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 8,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
     },
     {
       "match_id": 9055765910,
-      "reason": "parsed replay data or account player unavailable"
-    },
+      "hero": "Anti-Mage",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9055765910.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9055765910.md",
+      "bytes": 280333,
+      "sha256": "dd3aefb4e6c37d01935fdb3a21385fff6fc85d2af44314426b68c14033838283",
+      "event_count": 231,
+      "event_counts": {
+        "death": 105,
+        "objective": 7,
+        "major_item": 63,
+        "teamfight": 17,
+        "tower": 18,
+        "buyback": 8,
+        "roshan": 2,
+        "aegis": 2,
+        "barracks": 8,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 2,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    }
+  ],
+  "unavailable_matches": [
     {
       "match_id": 9055699048,
       "reason": "parsed replay data or account player unavailable"

@@ -1,14 +1,14 @@
 {
   "account_id": 467233306,
-  "fetched_at_utc": "2026-10-23T02:33:31.017109+00:00",
+  "fetched_at_utc": "2026-10-23T11:37:09.645287+00:00",
   "match_count": 100,
   "ranked_match_count": 50,
   "detail_selection": "latest_ranked",
   "detail_count_requested": 50,
   "detail_count_updated": 3,
   "detail_count_available": 50,
-  "detail_count_parsed": 11,
-  "detail_count_full_replay": 11,
+  "detail_count_parsed": 14,
+  "detail_count_full_replay": 14,
   "detail_status": [
     {
       "match_id": 9057336754,
@@ -87,10 +87,10 @@
     },
     {
       "match_id": 9056356295,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": true,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": true,
         "full_replay_data": true,
@@ -109,10 +109,10 @@
     },
     {
       "match_id": 9056324665,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": true,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": true,
         "full_replay_data": true,
@@ -131,10 +131,10 @@
     },
     {
       "match_id": 9056278418,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": true,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": true,
         "full_replay_data": true,
@@ -198,116 +198,68 @@
     },
     {
       "match_id": 9056125893,
-      "updated": false,
+      "updated": true,
       "available": true,
-      "parsed": false,
-      "source": "cache",
+      "parsed": true,
+      "source": "api",
       "coverage": {
-        "replay_parsed": false,
-        "full_replay_data": false,
-        "missing_core_fields": [
-          "times",
-          "gold_t",
-          "xp_t",
-          "lh_t",
-          "dn_t",
-          "networth_t",
-          "purchase_log",
-          "kills_log",
-          "deaths_log",
-          "buyback_log",
-          "lane_pos",
-          "lane_efficiency_pct",
-          "teamfight_participation",
-          "objectives",
-          "teamfights",
-          "replay_parsed"
-        ],
-        "category": "basic_only"
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
       },
-      "parse_eligibility": "eligible",
+      "parse_eligibility": "already_parsed",
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792722764.2245674,
         "next_request_at": 1792895564.2245674,
-        "status": "queued",
-        "job_id": 600136694
+        "status": "parsed_data_available",
+        "job_id": 600136694,
+        "next_job_check_at": 1792776981.3193312
       }
     },
     {
       "match_id": 9056085481,
-      "updated": false,
+      "updated": true,
       "available": true,
-      "parsed": false,
-      "source": "cache",
+      "parsed": true,
+      "source": "api",
       "coverage": {
-        "replay_parsed": false,
-        "full_replay_data": false,
-        "missing_core_fields": [
-          "times",
-          "gold_t",
-          "xp_t",
-          "lh_t",
-          "dn_t",
-          "networth_t",
-          "purchase_log",
-          "kills_log",
-          "deaths_log",
-          "buyback_log",
-          "lane_pos",
-          "lane_efficiency_pct",
-          "teamfight_participation",
-          "objectives",
-          "teamfights",
-          "replay_parsed"
-        ],
-        "category": "basic_only"
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
       },
-      "parse_eligibility": "eligible",
+      "parse_eligibility": "already_parsed",
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792722764.2245674,
         "next_request_at": 1792895564.2245674,
-        "status": "queued",
-        "job_id": 600136865
+        "status": "parsed_data_available",
+        "job_id": 600136865,
+        "next_job_check_at": 1792776981.3193312
       }
     },
     {
       "match_id": 9055765910,
-      "updated": false,
+      "updated": true,
       "available": true,
-      "parsed": false,
-      "source": "cache",
+      "parsed": true,
+      "source": "api",
       "coverage": {
-        "replay_parsed": false,
-        "full_replay_data": false,
-        "missing_core_fields": [
-          "times",
-          "gold_t",
-          "xp_t",
-          "lh_t",
-          "dn_t",
-          "networth_t",
-          "purchase_log",
-          "kills_log",
-          "deaths_log",
-          "buyback_log",
-          "lane_pos",
-          "lane_efficiency_pct",
-          "teamfight_participation",
-          "objectives",
-          "teamfights",
-          "replay_parsed"
-        ],
-        "category": "basic_only"
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
       },
-      "parse_eligibility": "eligible",
+      "parse_eligibility": "already_parsed",
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792722764.2245674,
         "next_request_at": 1792895564.2245674,
-        "status": "queued",
-        "job_id": 600136967
+        "status": "parsed_data_available",
+        "job_id": 600136967,
+        "next_job_check_at": 1792776981.3193312
       }
     },
     {
@@ -340,7 +292,13 @@
         "category": "basic_only"
       },
       "parse_eligibility": "eligible",
-      "parse_request": null
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792755381.3193312,
+        "next_request_at": 1792928181.3193312,
+        "status": "queued",
+        "job_id": 600583176
+      }
     },
     {
       "match_id": 9055609160,
@@ -372,7 +330,13 @@
         "category": "basic_only"
       },
       "parse_eligibility": "eligible",
-      "parse_request": null
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792755381.3193312,
+        "next_request_at": 1792928181.3193312,
+        "status": "queued",
+        "job_id": 600583443
+      }
     },
     {
       "match_id": 9055543084,
@@ -404,7 +368,13 @@
         "category": "basic_only"
       },
       "parse_eligibility": "eligible",
-      "parse_request": null
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792755381.3193312,
+        "next_request_at": 1792928181.3193312,
+        "status": "queued",
+        "job_id": 600583657
+      }
     },
     {
       "match_id": 9054514051,
