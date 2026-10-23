@@ -1,0 +1,340 @@
+{
+  "account_id": 467233306,
+  "fetched_at_utc": "2026-10-23T02:10:16.815426+00:00",
+  "match_count": 100,
+  "ranked_match_count": 100,
+  "detail_count_requested": 12,
+  "detail_count_updated": 12,
+  "detail_count_available": 12,
+  "detail_count_parsed": 8,
+  "detail_status": [
+    {
+      "match_id": 9057336754,
+      "updated": true,
+      "available": true,
+      "parsed": true,
+      "source": "api"
+    },
+    {
+      "match_id": 9057235675,
+      "updated": true,
+      "available": true,
+      "parsed": true,
+      "source": "api"
+    },
+    {
+      "match_id": 9057185582,
+      "updated": true,
+      "available": true,
+      "parsed": true,
+      "source": "api"
+    },
+    {
+      "match_id": 9057123958,
+      "updated": true,
+      "available": true,
+      "parsed": true,
+      "source": "api"
+    },
+    {
+      "match_id": 9057039065,
+      "updated": true,
+      "available": true,
+      "parsed": true,
+      "source": "api"
+    },
+    {
+      "match_id": 9056356295,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api"
+    },
+    {
+      "match_id": 9056324665,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api"
+    },
+    {
+      "match_id": 9056278418,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api"
+    },
+    {
+      "match_id": 9056246052,
+      "updated": true,
+      "available": true,
+      "parsed": true,
+      "source": "api"
+    },
+    {
+      "match_id": 9056199662,
+      "updated": true,
+      "available": true,
+      "parsed": true,
+      "source": "api"
+    },
+    {
+      "match_id": 9056167322,
+      "updated": true,
+      "available": true,
+      "parsed": true,
+      "source": "api"
+    },
+    {
+      "match_id": 9056125893,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api"
+    }
+  ],
+  "recent_matches": [
+    {
+      "match_id": 9057336754,
+      "kills": 12,
+      "deaths": 8,
+      "assists": 22,
+      "hero_id": 48,
+      "start_time": 1792713710,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9057235675,
+      "kills": 10,
+      "deaths": 6,
+      "assists": 22,
+      "hero_id": 54,
+      "start_time": 1792704240,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9057185582,
+      "kills": 11,
+      "deaths": 6,
+      "assists": 9,
+      "hero_id": 48,
+      "start_time": 1792701146,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9057123958,
+      "kills": 4,
+      "deaths": 9,
+      "assists": 11,
+      "hero_id": 48,
+      "start_time": 1792698071,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9057039065,
+      "kills": 4,
+      "deaths": 7,
+      "assists": 17,
+      "hero_id": 6,
+      "start_time": 1792694231,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9056356295,
+      "kills": 9,
+      "deaths": 9,
+      "assists": 14,
+      "hero_id": 84,
+      "start_time": 1792666440,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9056324665,
+      "kills": 2,
+      "deaths": 7,
+      "assists": 10,
+      "hero_id": 69,
+      "start_time": 1792664420,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9056278418,
+      "kills": 4,
+      "deaths": 2,
+      "assists": 20,
+      "hero_id": 37,
+      "start_time": 1792661070,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9056246052,
+      "kills": 10,
+      "deaths": 3,
+      "assists": 6,
+      "hero_id": 1,
+      "start_time": 1792658515,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9056199662,
+      "kills": 9,
+      "deaths": 4,
+      "assists": 11,
+      "hero_id": 1,
+      "start_time": 1792654634,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9056167322,
+      "kills": 4,
+      "deaths": 4,
+      "assists": 11,
+      "hero_id": 48,
+      "start_time": 1792651589,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9056125893,
+      "kills": 13,
+      "deaths": 7,
+      "assists": 10,
+      "hero_id": 48,
+      "start_time": 1792647194,
+      "lobby_type": 7,
+      "won": false
+    }
+  ],
+  "recent_ranked": [
+    {
+      "match_id": 9057336754,
+      "kills": 12,
+      "deaths": 8,
+      "assists": 22,
+      "hero_id": 48,
+      "start_time": 1792713710,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9057235675,
+      "kills": 10,
+      "deaths": 6,
+      "assists": 22,
+      "hero_id": 54,
+      "start_time": 1792704240,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9057185582,
+      "kills": 11,
+      "deaths": 6,
+      "assists": 9,
+      "hero_id": 48,
+      "start_time": 1792701146,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9057123958,
+      "kills": 4,
+      "deaths": 9,
+      "assists": 11,
+      "hero_id": 48,
+      "start_time": 1792698071,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9057039065,
+      "kills": 4,
+      "deaths": 7,
+      "assists": 17,
+      "hero_id": 6,
+      "start_time": 1792694231,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9056356295,
+      "kills": 9,
+      "deaths": 9,
+      "assists": 14,
+      "hero_id": 84,
+      "start_time": 1792666440,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9056324665,
+      "kills": 2,
+      "deaths": 7,
+      "assists": 10,
+      "hero_id": 69,
+      "start_time": 1792664420,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9056278418,
+      "kills": 4,
+      "deaths": 2,
+      "assists": 20,
+      "hero_id": 37,
+      "start_time": 1792661070,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9056246052,
+      "kills": 10,
+      "deaths": 3,
+      "assists": 6,
+      "hero_id": 1,
+      "start_time": 1792658515,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9056199662,
+      "kills": 9,
+      "deaths": 4,
+      "assists": 11,
+      "hero_id": 1,
+      "start_time": 1792654634,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9056167322,
+      "kills": 4,
+      "deaths": 4,
+      "assists": 11,
+      "hero_id": 48,
+      "start_time": 1792651589,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9056125893,
+      "kills": 13,
+      "deaths": 7,
+      "assists": 10,
+      "hero_id": 48,
+      "start_time": 1792647194,
+      "lobby_type": 7,
+      "won": false
+    }
+  ]
+}

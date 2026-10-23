@@ -1,0 +1,38 @@
+name: Sync OpenDota matches
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: opendota-sync
+  cancel-in-progress: false
+env:
+  DOTA_ACCOUNT_ID: '467233306'
+  MATCH_COUNT: '100'
+  DETAIL_COUNT: '12'
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test sync error handling
+        run: python -m unittest discover -s tests -v
+      - name: Download public match statistics
+        run: python -u scripts/fetch.py
+      - name: Validate generated data
+        run: python scripts/validate.py
+      - name: Commit latest data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update Dota match data'
+            git push
+          fi
