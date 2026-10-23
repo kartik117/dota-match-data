@@ -1,14 +1,14 @@
 {
   "account_id": 467233306,
-  "fetched_at_utc": "2026-10-23T02:29:49.456570+00:00",
+  "fetched_at_utc": "2026-10-23T02:33:31.017109+00:00",
   "match_count": 100,
   "ranked_match_count": 50,
   "detail_selection": "latest_ranked",
   "detail_count_requested": 50,
-  "detail_count_updated": 42,
+  "detail_count_updated": 3,
   "detail_count_available": 50,
-  "detail_count_parsed": 8,
-  "detail_count_full_replay": 8,
+  "detail_count_parsed": 11,
+  "detail_count_full_replay": 11,
   "detail_status": [
     {
       "match_id": 9057336754,
@@ -89,114 +89,66 @@
       "match_id": 9056356295,
       "updated": true,
       "available": true,
-      "parsed": false,
+      "parsed": true,
       "source": "api",
       "coverage": {
-        "replay_parsed": false,
-        "full_replay_data": false,
-        "missing_core_fields": [
-          "times",
-          "gold_t",
-          "xp_t",
-          "lh_t",
-          "dn_t",
-          "networth_t",
-          "purchase_log",
-          "kills_log",
-          "deaths_log",
-          "buyback_log",
-          "lane_pos",
-          "lane_efficiency_pct",
-          "teamfight_participation",
-          "objectives",
-          "teamfights",
-          "replay_parsed"
-        ],
-        "category": "basic_only"
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
       },
-      "parse_eligibility": "eligible",
+      "parse_eligibility": "already_parsed",
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792722468.103392,
         "next_request_at": 1792895268.103392,
-        "status": "queued",
-        "job_id": 600132443
+        "status": "parsed_data_available",
+        "job_id": 600132443,
+        "next_job_check_at": 1792744364.2245674
       }
     },
     {
       "match_id": 9056324665,
       "updated": true,
       "available": true,
-      "parsed": false,
+      "parsed": true,
       "source": "api",
       "coverage": {
-        "replay_parsed": false,
-        "full_replay_data": false,
-        "missing_core_fields": [
-          "times",
-          "gold_t",
-          "xp_t",
-          "lh_t",
-          "dn_t",
-          "networth_t",
-          "purchase_log",
-          "kills_log",
-          "deaths_log",
-          "buyback_log",
-          "lane_pos",
-          "lane_efficiency_pct",
-          "teamfight_participation",
-          "objectives",
-          "teamfights",
-          "replay_parsed"
-        ],
-        "category": "basic_only"
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
       },
-      "parse_eligibility": "eligible",
+      "parse_eligibility": "already_parsed",
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792722468.103392,
         "next_request_at": 1792895268.103392,
-        "status": "queued",
-        "job_id": 600132862
+        "status": "parsed_data_available",
+        "job_id": 600132862,
+        "next_job_check_at": 1792744364.2245674
       }
     },
     {
       "match_id": 9056278418,
       "updated": true,
       "available": true,
-      "parsed": false,
+      "parsed": true,
       "source": "api",
       "coverage": {
-        "replay_parsed": false,
-        "full_replay_data": false,
-        "missing_core_fields": [
-          "times",
-          "gold_t",
-          "xp_t",
-          "lh_t",
-          "dn_t",
-          "networth_t",
-          "purchase_log",
-          "kills_log",
-          "deaths_log",
-          "buyback_log",
-          "lane_pos",
-          "lane_efficiency_pct",
-          "teamfight_participation",
-          "objectives",
-          "teamfights",
-          "replay_parsed"
-        ],
-        "category": "basic_only"
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
       },
-      "parse_eligibility": "eligible",
+      "parse_eligibility": "already_parsed",
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792722468.103392,
         "next_request_at": 1792895268.103392,
-        "status": "queued",
-        "job_id": 600133286
+        "status": "parsed_data_available",
+        "job_id": 600133286,
+        "next_job_check_at": 1792744364.2245674
       }
     },
     {
@@ -246,10 +198,10 @@
     },
     {
       "match_id": 9056125893,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -274,14 +226,20 @@
         "category": "basic_only"
       },
       "parse_eligibility": "eligible",
-      "parse_request": null
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792722764.2245674,
+        "next_request_at": 1792895564.2245674,
+        "status": "queued",
+        "job_id": 600136694
+      }
     },
     {
       "match_id": 9056085481,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -306,14 +264,20 @@
         "category": "basic_only"
       },
       "parse_eligibility": "eligible",
-      "parse_request": null
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792722764.2245674,
+        "next_request_at": 1792895564.2245674,
+        "status": "queued",
+        "job_id": 600136865
+      }
     },
     {
       "match_id": 9055765910,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -338,14 +302,20 @@
         "category": "basic_only"
       },
       "parse_eligibility": "eligible",
-      "parse_request": null
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792722764.2245674,
+        "next_request_at": 1792895564.2245674,
+        "status": "queued",
+        "job_id": 600136967
+      }
     },
     {
       "match_id": 9055699048,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -374,10 +344,10 @@
     },
     {
       "match_id": 9055609160,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -406,10 +376,10 @@
     },
     {
       "match_id": 9055543084,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -438,10 +408,10 @@
     },
     {
       "match_id": 9054514051,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -470,10 +440,10 @@
     },
     {
       "match_id": 9054458370,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -502,10 +472,10 @@
     },
     {
       "match_id": 9054395109,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -534,10 +504,10 @@
     },
     {
       "match_id": 9054330601,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -566,10 +536,10 @@
     },
     {
       "match_id": 9054226495,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -598,10 +568,10 @@
     },
     {
       "match_id": 9051585509,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -630,10 +600,10 @@
     },
     {
       "match_id": 9051047933,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -662,10 +632,10 @@
     },
     {
       "match_id": 9050245677,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -694,10 +664,10 @@
     },
     {
       "match_id": 9049564611,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -726,10 +696,10 @@
     },
     {
       "match_id": 9048835066,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -758,10 +728,10 @@
     },
     {
       "match_id": 9048516424,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -790,10 +760,10 @@
     },
     {
       "match_id": 9048494322,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -822,10 +792,10 @@
     },
     {
       "match_id": 9048459723,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -854,10 +824,10 @@
     },
     {
       "match_id": 9048425722,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -886,10 +856,10 @@
     },
     {
       "match_id": 9048391677,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -918,10 +888,10 @@
     },
     {
       "match_id": 9048367544,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -950,10 +920,10 @@
     },
     {
       "match_id": 9048063835,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -982,10 +952,10 @@
     },
     {
       "match_id": 9047961193,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1014,10 +984,10 @@
     },
     {
       "match_id": 9047869924,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1046,10 +1016,10 @@
     },
     {
       "match_id": 9046879117,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1078,10 +1048,10 @@
     },
     {
       "match_id": 9046850228,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1110,10 +1080,10 @@
     },
     {
       "match_id": 9046806312,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1142,10 +1112,10 @@
     },
     {
       "match_id": 9046682643,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1174,10 +1144,10 @@
     },
     {
       "match_id": 9046584325,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1206,10 +1176,10 @@
     },
     {
       "match_id": 9045717152,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1238,10 +1208,10 @@
     },
     {
       "match_id": 9045582858,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1270,10 +1240,10 @@
     },
     {
       "match_id": 9045538079,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1302,10 +1272,10 @@
     },
     {
       "match_id": 9045512460,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1334,10 +1304,10 @@
     },
     {
       "match_id": 9026753968,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1366,10 +1336,10 @@
     },
     {
       "match_id": 9025373130,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1398,10 +1368,10 @@
     },
     {
       "match_id": 9025351404,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1430,10 +1400,10 @@
     },
     {
       "match_id": 9024006387,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,
@@ -1462,10 +1432,10 @@
     },
     {
       "match_id": 9022301205,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": false,
-      "source": "api",
+      "source": "cache",
       "coverage": {
         "replay_parsed": false,
         "full_replay_data": false,

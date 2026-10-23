@@ -6,39 +6,42 @@
     "9057123958": {},
     "9057039065": {},
     "9056356295": {
-      "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792744068.103392,
-      "last_download_at": 1792722468.103392,
+      "last_check_at": 1792722764.2245674,
+      "next_detail_check_at": 1792809164.2245674,
+      "last_download_at": 1792722764.2245674,
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792722468.103392,
         "next_request_at": 1792895268.103392,
-        "status": "queued",
-        "job_id": 600132443
+        "status": "parsed_data_available",
+        "job_id": 600132443,
+        "next_job_check_at": 1792744364.2245674
       }
     },
     "9056324665": {
-      "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792744068.103392,
-      "last_download_at": 1792722468.103392,
+      "last_check_at": 1792722764.2245674,
+      "next_detail_check_at": 1792809164.2245674,
+      "last_download_at": 1792722764.2245674,
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792722468.103392,
         "next_request_at": 1792895268.103392,
-        "status": "queued",
-        "job_id": 600132862
+        "status": "parsed_data_available",
+        "job_id": 600132862,
+        "next_job_check_at": 1792744364.2245674
       }
     },
     "9056278418": {
-      "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792744068.103392,
-      "last_download_at": 1792722468.103392,
+      "last_check_at": 1792722764.2245674,
+      "next_detail_check_at": 1792809164.2245674,
+      "last_download_at": 1792722764.2245674,
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792722468.103392,
         "next_request_at": 1792895268.103392,
-        "status": "queued",
-        "job_id": 600133286
+        "status": "parsed_data_available",
+        "job_id": 600133286,
+        "next_job_check_at": 1792744364.2245674
       }
     },
     "9056246052": {},
@@ -46,18 +49,39 @@
     "9056167322": {},
     "9056125893": {
       "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792808868.103392,
-      "last_download_at": 1792722468.103392
+      "next_detail_check_at": 1792744364.2245674,
+      "last_download_at": 1792722468.103392,
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792722764.2245674,
+        "next_request_at": 1792895564.2245674,
+        "status": "queued",
+        "job_id": 600136694
+      }
     },
     "9056085481": {
       "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792808868.103392,
-      "last_download_at": 1792722468.103392
+      "next_detail_check_at": 1792744364.2245674,
+      "last_download_at": 1792722468.103392,
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792722764.2245674,
+        "next_request_at": 1792895564.2245674,
+        "status": "queued",
+        "job_id": 600136865
+      }
     },
     "9055765910": {
       "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792808868.103392,
-      "last_download_at": 1792722468.103392
+      "next_detail_check_at": 1792744364.2245674,
+      "last_download_at": 1792722468.103392,
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792722764.2245674,
+        "next_request_at": 1792895564.2245674,
+        "status": "queued",
+        "job_id": 600136967
+      }
     },
     "9055699048": {
       "last_check_at": 1792722468.103392,
