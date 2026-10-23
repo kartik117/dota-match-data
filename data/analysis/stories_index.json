@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "account_id": 467233306,
-  "generated_at_utc": "2026-10-23T11:37:09.733795+00:00",
+  "generated_at_utc": "2026-10-23T17:05:48.955666+00:00",
   "priority_match_id": 9057336754,
   "ranked_matches_considered": 50,
-  "story_count": 14,
+  "story_count": 17,
   "stories": [
     {
       "match_id": 9057336754,
@@ -434,21 +434,98 @@
         "missing_core_fields": [],
         "category": "full_replay"
       }
-    }
-  ],
-  "unavailable_matches": [
+    },
     {
       "match_id": 9055699048,
-      "reason": "parsed replay data or account player unavailable"
+      "hero": "Tusk",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9055699048.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9055699048.md",
+      "bytes": 240519,
+      "sha256": "c0dc69b58e6d574cfdfe5246d4d16ea474aa59e13584a8bf4941ab197afa0923",
+      "event_count": 178,
+      "event_counts": {
+        "death": 91,
+        "objective": 2,
+        "major_item": 50,
+        "teamfight": 12,
+        "tower": 14,
+        "barracks": 6,
+        "buyback": 2,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 13,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
     },
     {
       "match_id": 9055609160,
-      "reason": "parsed replay data or account player unavailable"
+      "hero": "Wraith King",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9055609160.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9055609160.md",
+      "bytes": 271555,
+      "sha256": "d85bd82d209ccb8de7e6c52395f96793cfb6d08329fc7d5dd7c4345b8c0d9ab3",
+      "event_count": 252,
+      "event_counts": {
+        "death": 119,
+        "objective": 7,
+        "teamfight": 11,
+        "major_item": 75,
+        "tower": 18,
+        "barracks": 8,
+        "buyback": 9,
+        "roshan": 2,
+        "aegis": 2,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 6,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
     },
     {
       "match_id": 9055543084,
-      "reason": "parsed replay data or account player unavailable"
-    },
+      "hero": "Luna",
+      "outcome": "loss",
+      "account_id": 467233306,
+      "path": "data/stories/9055543084.md",
+      "raw_url": "https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/stories/9055543084.md",
+      "bytes": 170228,
+      "sha256": "b62b1571d8fd8bda3cf756443c5c8ae4b17ffd66e3db0fa19309298d92e8b2e1",
+      "event_count": 148,
+      "event_counts": {
+        "death": 70,
+        "objective": 1,
+        "major_item": 43,
+        "teamfight": 8,
+        "tower": 14,
+        "buyback": 5,
+        "barracks": 6,
+        "ancient": 1
+      },
+      "potential_turning_point_count": 4,
+      "missing_information": [],
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      }
+    }
+  ],
+  "unavailable_matches": [
     {
       "match_id": 9054514051,
       "reason": "parsed replay data or account player unavailable"

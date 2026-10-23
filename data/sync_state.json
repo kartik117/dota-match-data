@@ -87,55 +87,79 @@
       }
     },
     "9055699048": {
-      "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792776981.3193312,
-      "last_download_at": 1792722468.103392,
+      "last_check_at": 1792775100.5834415,
+      "next_detail_check_at": 1792861500.5834415,
+      "last_download_at": 1792775100.5834415,
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792755381.3193312,
         "next_request_at": 1792928181.3193312,
-        "status": "queued",
-        "job_id": 600583176
+        "status": "parsed_data_available",
+        "job_id": 600583176,
+        "next_job_check_at": 1792796700.5834415
       }
     },
     "9055609160": {
-      "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792776981.3193312,
-      "last_download_at": 1792722468.103392,
+      "last_check_at": 1792775100.5834415,
+      "next_detail_check_at": 1792861500.5834415,
+      "last_download_at": 1792775100.5834415,
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792755381.3193312,
         "next_request_at": 1792928181.3193312,
-        "status": "queued",
-        "job_id": 600583443
+        "status": "parsed_data_available",
+        "job_id": 600583443,
+        "next_job_check_at": 1792796700.5834415
       }
     },
     "9055543084": {
-      "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792776981.3193312,
-      "last_download_at": 1792722468.103392,
+      "last_check_at": 1792775100.5834415,
+      "next_detail_check_at": 1792861500.5834415,
+      "last_download_at": 1792775100.5834415,
       "parse_request": {
         "attempts": 1,
         "requested_at": 1792755381.3193312,
         "next_request_at": 1792928181.3193312,
-        "status": "queued",
-        "job_id": 600583657
+        "status": "parsed_data_available",
+        "job_id": 600583657,
+        "next_job_check_at": 1792796700.5834415
       }
     },
     "9054514051": {
       "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792808868.103392,
-      "last_download_at": 1792722468.103392
+      "next_detail_check_at": 1792796700.5834415,
+      "last_download_at": 1792722468.103392,
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792775100.5834415,
+        "next_request_at": 1792947900.5834415,
+        "status": "queued",
+        "job_id": 601129659
+      }
     },
     "9054458370": {
       "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792808868.103392,
-      "last_download_at": 1792722468.103392
+      "next_detail_check_at": 1792796700.5834415,
+      "last_download_at": 1792722468.103392,
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792775100.5834415,
+        "next_request_at": 1792947900.5834415,
+        "status": "queued",
+        "job_id": 601129948
+      }
     },
     "9054395109": {
       "last_check_at": 1792722468.103392,
-      "next_detail_check_at": 1792808868.103392,
-      "last_download_at": 1792722468.103392
+      "next_detail_check_at": 1792796700.5834415,
+      "last_download_at": 1792722468.103392,
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792775100.5834415,
+        "next_request_at": 1792947900.5834415,
+        "status": "queued",
+        "job_id": 601130467
+      }
     },
     "9054330601": {
       "last_check_at": 1792722468.103392,
