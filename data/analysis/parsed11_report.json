@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "account_id": 467233306,
-  "generated_at_utc": "2026-10-23T02:51:38.841581+00:00",
+  "generated_at_utc": "2026-10-23T02:54:30.204633+00:00",
   "selection": "All currently replay-parsed matches in the latest 50 ranked; filename retained as coverage grows.",
   "parsed_match_count": 11,
   "ranked_window_count": 50,
