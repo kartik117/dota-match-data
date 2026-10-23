@@ -342,7 +342,7 @@ def render(story):
         lines.append('No timestamped events available.')
     for e in story['events']:
         lines += [f'### {clock(e["time"])} — {e["text"]}', '']
-        people = [f'{p["hero"]} (account {p["account_id"] if p["account_id"] is not None else "unavailable"}; {p["role"]}; source `{p["source"]}`)' 
+        people = [f'{p["hero"]} (account {p["account_id"] if p["account_id"] is not None else "unavailable"}; {p["role"]}; source `{p["source"]}`)'
                   for p in e['participants']]
         lines += ['Recorded players: ' + ('; '.join(people) if people else 'unavailable; see original actor/unit fields') + '.', '']
         for label, context in e['advantage'].items():
