@@ -1,96 +1,1496 @@
 {
   "account_id": 467233306,
-  "fetched_at_utc": "2026-10-23T02:13:37.148114+00:00",
+  "fetched_at_utc": "2026-10-23T02:29:49.456570+00:00",
   "match_count": 100,
-  "ranked_match_count": 100,
-  "detail_count_requested": 12,
-  "detail_count_updated": 12,
-  "detail_count_available": 12,
+  "ranked_match_count": 50,
+  "detail_selection": "latest_ranked",
+  "detail_count_requested": 50,
+  "detail_count_updated": 42,
+  "detail_count_available": 50,
   "detail_count_parsed": 8,
+  "detail_count_full_replay": 8,
   "detail_status": [
     {
       "match_id": 9057336754,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": true,
-      "source": "api"
+      "source": "cache",
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      },
+      "parse_eligibility": "already_parsed",
+      "parse_request": null
     },
     {
       "match_id": 9057235675,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": true,
-      "source": "api"
+      "source": "cache",
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      },
+      "parse_eligibility": "already_parsed",
+      "parse_request": null
     },
     {
       "match_id": 9057185582,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": true,
-      "source": "api"
+      "source": "cache",
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      },
+      "parse_eligibility": "already_parsed",
+      "parse_request": null
     },
     {
       "match_id": 9057123958,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": true,
-      "source": "api"
+      "source": "cache",
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      },
+      "parse_eligibility": "already_parsed",
+      "parse_request": null
     },
     {
       "match_id": 9057039065,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": true,
-      "source": "api"
+      "source": "cache",
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      },
+      "parse_eligibility": "already_parsed",
+      "parse_request": null
     },
     {
       "match_id": 9056356295,
       "updated": true,
       "available": true,
       "parsed": false,
-      "source": "api"
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792722468.103392,
+        "next_request_at": 1792895268.103392,
+        "status": "queued",
+        "job_id": 600132443
+      }
     },
     {
       "match_id": 9056324665,
       "updated": true,
       "available": true,
       "parsed": false,
-      "source": "api"
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792722468.103392,
+        "next_request_at": 1792895268.103392,
+        "status": "queued",
+        "job_id": 600132862
+      }
     },
     {
       "match_id": 9056278418,
       "updated": true,
       "available": true,
       "parsed": false,
-      "source": "api"
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": {
+        "attempts": 1,
+        "requested_at": 1792722468.103392,
+        "next_request_at": 1792895268.103392,
+        "status": "queued",
+        "job_id": 600133286
+      }
     },
     {
       "match_id": 9056246052,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": true,
-      "source": "api"
+      "source": "cache",
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      },
+      "parse_eligibility": "already_parsed",
+      "parse_request": null
     },
     {
       "match_id": 9056199662,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": true,
-      "source": "api"
+      "source": "cache",
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      },
+      "parse_eligibility": "already_parsed",
+      "parse_request": null
     },
     {
       "match_id": 9056167322,
-      "updated": true,
+      "updated": false,
       "available": true,
       "parsed": true,
-      "source": "api"
+      "source": "cache",
+      "coverage": {
+        "replay_parsed": true,
+        "full_replay_data": true,
+        "missing_core_fields": [],
+        "category": "full_replay"
+      },
+      "parse_eligibility": "already_parsed",
+      "parse_request": null
     },
     {
       "match_id": 9056125893,
       "updated": true,
       "available": true,
       "parsed": false,
-      "source": "api"
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9056085481,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9055765910,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9055699048,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9055609160,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9055543084,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9054514051,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9054458370,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9054395109,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9054330601,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9054226495,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9051585509,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9051047933,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9050245677,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9049564611,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9048835066,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9048516424,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9048494322,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9048459723,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9048425722,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9048391677,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9048367544,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9048063835,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9047961193,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9047869924,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "eligible",
+      "parse_request": null
+    },
+    {
+      "match_id": 9046879117,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9046850228,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9046806312,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9046682643,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9046584325,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9045717152,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9045582858,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9045538079,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9045512460,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9026753968,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9025373130,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9025351404,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9024006387,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
+    },
+    {
+      "match_id": 9022301205,
+      "updated": true,
+      "available": true,
+      "parsed": false,
+      "source": "api",
+      "coverage": {
+        "replay_parsed": false,
+        "full_replay_data": false,
+        "missing_core_fields": [
+          "times",
+          "gold_t",
+          "xp_t",
+          "lh_t",
+          "dn_t",
+          "networth_t",
+          "purchase_log",
+          "kills_log",
+          "deaths_log",
+          "buyback_log",
+          "lane_pos",
+          "lane_efficiency_pct",
+          "teamfight_participation",
+          "objectives",
+          "teamfights",
+          "replay_parsed"
+        ],
+        "category": "basic_only"
+      },
+      "parse_eligibility": "outside_conservative_7_day_window",
+      "parse_request": null
     }
   ],
   "recent_matches": [
@@ -213,6 +1613,386 @@
       "start_time": 1792647194,
       "lobby_type": 7,
       "won": false
+    },
+    {
+      "match_id": 9056085481,
+      "kills": 7,
+      "deaths": 9,
+      "assists": 5,
+      "hero_id": 1,
+      "start_time": 1792642834,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9055765910,
+      "kills": 10,
+      "deaths": 3,
+      "assists": 10,
+      "hero_id": 1,
+      "start_time": 1792612721,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9055699048,
+      "kills": 1,
+      "deaths": 14,
+      "assists": 25,
+      "hero_id": 100,
+      "start_time": 1792609555,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9055609160,
+      "kills": 14,
+      "deaths": 10,
+      "assists": 15,
+      "hero_id": 42,
+      "start_time": 1792605762,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9055543084,
+      "kills": 3,
+      "deaths": 5,
+      "assists": 7,
+      "hero_id": 48,
+      "start_time": 1792603080,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9054514051,
+      "kills": 10,
+      "deaths": 4,
+      "assists": 8,
+      "hero_id": 1,
+      "start_time": 1792533362,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9054458370,
+      "kills": 4,
+      "deaths": 2,
+      "assists": 13,
+      "hero_id": 1,
+      "start_time": 1792529321,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9054395109,
+      "kills": 1,
+      "deaths": 3,
+      "assists": 5,
+      "hero_id": 1,
+      "start_time": 1792525732,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9054330601,
+      "kills": 7,
+      "deaths": 6,
+      "assists": 12,
+      "hero_id": 48,
+      "start_time": 1792522661,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9054226495,
+      "kills": 12,
+      "deaths": 4,
+      "assists": 14,
+      "hero_id": 42,
+      "start_time": 1792518358,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9051585509,
+      "kills": 8,
+      "deaths": 7,
+      "assists": 17,
+      "hero_id": 54,
+      "start_time": 1792351208,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9051047933,
+      "kills": 3,
+      "deaths": 11,
+      "assists": 13,
+      "hero_id": 12,
+      "start_time": 1792332408,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9050245677,
+      "kills": 7,
+      "deaths": 10,
+      "assists": 11,
+      "hero_id": 48,
+      "start_time": 1792293216,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9049564611,
+      "kills": 16,
+      "deaths": 8,
+      "assists": 18,
+      "hero_id": 48,
+      "start_time": 1792256663,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048835066,
+      "kills": 12,
+      "deaths": 2,
+      "assists": 11,
+      "hero_id": 1,
+      "start_time": 1792229137,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048516424,
+      "kills": 0,
+      "deaths": 4,
+      "assists": 6,
+      "hero_id": 42,
+      "start_time": 1792207131,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9048494322,
+      "kills": 1,
+      "deaths": 6,
+      "assists": 5,
+      "hero_id": 55,
+      "start_time": 1792205180,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9048459723,
+      "kills": 1,
+      "deaths": 12,
+      "assists": 21,
+      "hero_id": 33,
+      "start_time": 1792202055,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048425722,
+      "kills": 5,
+      "deaths": 10,
+      "assists": 34,
+      "hero_id": 26,
+      "start_time": 1792198726,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048391677,
+      "kills": 8,
+      "deaths": 15,
+      "assists": 26,
+      "hero_id": 33,
+      "start_time": 1792195170,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048367544,
+      "kills": 8,
+      "deaths": 2,
+      "assists": 7,
+      "hero_id": 48,
+      "start_time": 1792192831,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048063835,
+      "kills": 3,
+      "deaths": 1,
+      "assists": 2,
+      "hero_id": 70,
+      "start_time": 1792177133,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9047961193,
+      "kills": 5,
+      "deaths": 5,
+      "assists": 14,
+      "hero_id": 60,
+      "start_time": 1792173278,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9047869924,
+      "kills": 7,
+      "deaths": 8,
+      "assists": 5,
+      "hero_id": 48,
+      "start_time": 1792169963,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9046879117,
+      "kills": 3,
+      "deaths": 16,
+      "assists": 16,
+      "hero_id": 26,
+      "start_time": 1792106500,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9046850228,
+      "kills": 16,
+      "deaths": 5,
+      "assists": 14,
+      "hero_id": 1,
+      "start_time": 1792103656,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9046806312,
+      "kills": 3,
+      "deaths": 0,
+      "assists": 7,
+      "hero_id": 1,
+      "start_time": 1792100030,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9046682643,
+      "kills": 3,
+      "deaths": 5,
+      "assists": 3,
+      "hero_id": 1,
+      "start_time": 1792093071,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9046584325,
+      "kills": 13,
+      "deaths": 5,
+      "assists": 11,
+      "hero_id": 1,
+      "start_time": 1792088940,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9045717152,
+      "kills": 6,
+      "deaths": 4,
+      "assists": 20,
+      "hero_id": 12,
+      "start_time": 1792047174,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9045582858,
+      "kills": 4,
+      "deaths": 4,
+      "assists": 8,
+      "hero_id": 1,
+      "start_time": 1792032870,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9045538079,
+      "kills": 6,
+      "deaths": 8,
+      "assists": 4,
+      "hero_id": 54,
+      "start_time": 1792028075,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9045512460,
+      "kills": 11,
+      "deaths": 10,
+      "assists": 10,
+      "hero_id": 36,
+      "start_time": 1792025160,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9026753968,
+      "kills": 4,
+      "deaths": 10,
+      "assists": 14,
+      "hero_id": 71,
+      "start_time": 1790990518,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9025373130,
+      "kills": 8,
+      "deaths": 9,
+      "assists": 18,
+      "hero_id": 42,
+      "start_time": 1790916769,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9025351404,
+      "kills": 2,
+      "deaths": 5,
+      "assists": 2,
+      "hero_id": 1,
+      "start_time": 1790914554,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9024006387,
+      "kills": 10,
+      "deaths": 4,
+      "assists": 13,
+      "hero_id": 70,
+      "start_time": 1790835123,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9022301205,
+      "kills": 3,
+      "deaths": 4,
+      "assists": 13,
+      "hero_id": 12,
+      "start_time": 1790716204,
+      "lobby_type": 7,
+      "won": false
     }
   ],
   "recent_ranked": [
@@ -333,6 +2113,386 @@
       "assists": 10,
       "hero_id": 48,
       "start_time": 1792647194,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9056085481,
+      "kills": 7,
+      "deaths": 9,
+      "assists": 5,
+      "hero_id": 1,
+      "start_time": 1792642834,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9055765910,
+      "kills": 10,
+      "deaths": 3,
+      "assists": 10,
+      "hero_id": 1,
+      "start_time": 1792612721,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9055699048,
+      "kills": 1,
+      "deaths": 14,
+      "assists": 25,
+      "hero_id": 100,
+      "start_time": 1792609555,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9055609160,
+      "kills": 14,
+      "deaths": 10,
+      "assists": 15,
+      "hero_id": 42,
+      "start_time": 1792605762,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9055543084,
+      "kills": 3,
+      "deaths": 5,
+      "assists": 7,
+      "hero_id": 48,
+      "start_time": 1792603080,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9054514051,
+      "kills": 10,
+      "deaths": 4,
+      "assists": 8,
+      "hero_id": 1,
+      "start_time": 1792533362,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9054458370,
+      "kills": 4,
+      "deaths": 2,
+      "assists": 13,
+      "hero_id": 1,
+      "start_time": 1792529321,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9054395109,
+      "kills": 1,
+      "deaths": 3,
+      "assists": 5,
+      "hero_id": 1,
+      "start_time": 1792525732,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9054330601,
+      "kills": 7,
+      "deaths": 6,
+      "assists": 12,
+      "hero_id": 48,
+      "start_time": 1792522661,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9054226495,
+      "kills": 12,
+      "deaths": 4,
+      "assists": 14,
+      "hero_id": 42,
+      "start_time": 1792518358,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9051585509,
+      "kills": 8,
+      "deaths": 7,
+      "assists": 17,
+      "hero_id": 54,
+      "start_time": 1792351208,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9051047933,
+      "kills": 3,
+      "deaths": 11,
+      "assists": 13,
+      "hero_id": 12,
+      "start_time": 1792332408,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9050245677,
+      "kills": 7,
+      "deaths": 10,
+      "assists": 11,
+      "hero_id": 48,
+      "start_time": 1792293216,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9049564611,
+      "kills": 16,
+      "deaths": 8,
+      "assists": 18,
+      "hero_id": 48,
+      "start_time": 1792256663,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048835066,
+      "kills": 12,
+      "deaths": 2,
+      "assists": 11,
+      "hero_id": 1,
+      "start_time": 1792229137,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048516424,
+      "kills": 0,
+      "deaths": 4,
+      "assists": 6,
+      "hero_id": 42,
+      "start_time": 1792207131,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9048494322,
+      "kills": 1,
+      "deaths": 6,
+      "assists": 5,
+      "hero_id": 55,
+      "start_time": 1792205180,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9048459723,
+      "kills": 1,
+      "deaths": 12,
+      "assists": 21,
+      "hero_id": 33,
+      "start_time": 1792202055,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048425722,
+      "kills": 5,
+      "deaths": 10,
+      "assists": 34,
+      "hero_id": 26,
+      "start_time": 1792198726,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048391677,
+      "kills": 8,
+      "deaths": 15,
+      "assists": 26,
+      "hero_id": 33,
+      "start_time": 1792195170,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048367544,
+      "kills": 8,
+      "deaths": 2,
+      "assists": 7,
+      "hero_id": 48,
+      "start_time": 1792192831,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9048063835,
+      "kills": 3,
+      "deaths": 1,
+      "assists": 2,
+      "hero_id": 70,
+      "start_time": 1792177133,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9047961193,
+      "kills": 5,
+      "deaths": 5,
+      "assists": 14,
+      "hero_id": 60,
+      "start_time": 1792173278,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9047869924,
+      "kills": 7,
+      "deaths": 8,
+      "assists": 5,
+      "hero_id": 48,
+      "start_time": 1792169963,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9046879117,
+      "kills": 3,
+      "deaths": 16,
+      "assists": 16,
+      "hero_id": 26,
+      "start_time": 1792106500,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9046850228,
+      "kills": 16,
+      "deaths": 5,
+      "assists": 14,
+      "hero_id": 1,
+      "start_time": 1792103656,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9046806312,
+      "kills": 3,
+      "deaths": 0,
+      "assists": 7,
+      "hero_id": 1,
+      "start_time": 1792100030,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9046682643,
+      "kills": 3,
+      "deaths": 5,
+      "assists": 3,
+      "hero_id": 1,
+      "start_time": 1792093071,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9046584325,
+      "kills": 13,
+      "deaths": 5,
+      "assists": 11,
+      "hero_id": 1,
+      "start_time": 1792088940,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9045717152,
+      "kills": 6,
+      "deaths": 4,
+      "assists": 20,
+      "hero_id": 12,
+      "start_time": 1792047174,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9045582858,
+      "kills": 4,
+      "deaths": 4,
+      "assists": 8,
+      "hero_id": 1,
+      "start_time": 1792032870,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9045538079,
+      "kills": 6,
+      "deaths": 8,
+      "assists": 4,
+      "hero_id": 54,
+      "start_time": 1792028075,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9045512460,
+      "kills": 11,
+      "deaths": 10,
+      "assists": 10,
+      "hero_id": 36,
+      "start_time": 1792025160,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9026753968,
+      "kills": 4,
+      "deaths": 10,
+      "assists": 14,
+      "hero_id": 71,
+      "start_time": 1790990518,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9025373130,
+      "kills": 8,
+      "deaths": 9,
+      "assists": 18,
+      "hero_id": 42,
+      "start_time": 1790916769,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9025351404,
+      "kills": 2,
+      "deaths": 5,
+      "assists": 2,
+      "hero_id": 1,
+      "start_time": 1790914554,
+      "lobby_type": 7,
+      "won": false
+    },
+    {
+      "match_id": 9024006387,
+      "kills": 10,
+      "deaths": 4,
+      "assists": 13,
+      "hero_id": 70,
+      "start_time": 1790835123,
+      "lobby_type": 7,
+      "won": true
+    },
+    {
+      "match_id": 9022301205,
+      "kills": 3,
+      "deaths": 4,
+      "assists": 13,
+      "hero_id": 12,
+      "start_time": 1790716204,
       "lobby_type": 7,
       "won": false
     }

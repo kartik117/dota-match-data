@@ -1,30 +1,52 @@
 # Dota Match Data Sync
 
-Public OpenDota data for Steam32 account **467233306**, maintained at [kartik117/dota-match-data](https://github.com/kartik117/dota-match-data).
+Public OpenDota data for Steam32 account **467233306** in [kartik117/dota-match-data](https://github.com/kartik117/dota-match-data). The existing six-hour schedule remains **00:17, 06:17, 12:17, 18:17 UTC** (`17 */6 * * *`); GitHub can delay schedules. Manual runs are available under **Actions → Sync OpenDota matches → Run workflow**.
 
-The sync fetches the latest **100 matches** and details for the latest **12 matches of any lobby type**. GitHub Actions runs every six hours at **00:17, 06:17, 12:17, and 18:17 UTC** (`17 */6 * * *`). GitHub may delay scheduled runs. You can also use **Actions → Sync OpenDota matches → Run workflow**.
+## Public data
 
-## Public JSON
+- [Latest 50 ranked analysis](https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/analysis/last50.json)
+- [Latest 100 matches, any lobby](https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/matches.json)
+- [Latest 50 ranked history](https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/ranked_matches.json)
+- [Sync summary and parsing status](https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/summary.json)
+- Detail cache: `https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/matches/<match_id>.json`
 
-- [Match history](https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/matches.json): latest 100 matches with results, heroes, K/D/A, duration, and start times.
-- [Sync summary](https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/summary.json): account, UTC update time, counts, recent results, and per-match availability and parsing status.
-- Match details: `https://raw.githubusercontent.com/kartik117/dota-match-data/main/data/matches/<match_id>.json` for each selected match ID listed in `detail_status` in the summary.
+Ranked selection uses a separate server-filtered `lobby_type=7&limit=50` request. It does not select ranked matches only from the latest 100 all-lobby matches. If fewer than 50 are returned, the analysis reports the available count explicitly.
 
-`recent_ranked` remains available in the summary as a convenience, but detail selection uses the newest matches regardless of lobby type.
+## Analysis schema and interpretation
 
-## Reliability and parsing
+`data/analysis/last50.json` is compact JSON with per-match statistics, aggregate means and sample counts, win/loss means and differences, and per-hero aggregates and comparisons. Heroes use OpenDota's numeric hero IDs.
 
-The script retries network errors, invalid JSON, HTTP 408/429, and common server errors with backoff. It honors `Retry-After` values in seconds or HTTP-date format. A server cooldown longer than 120 seconds defers that request until a later sync. Permanent errors such as unavailable matches do not waste retries. Requests are paced at 1.3 seconds apart.
+- Per-match `metrics` include outcome, hero, duration, kills/deaths/assists, KDA ratio, GPM/XPM, last hits/denies, final net worth, lane efficiency, hero/tower damage, teamfight participation, lane/farming/stack counts and first observed purchase time for each item.
+- `progression` contains exact `[seconds,value]` observations of cumulative gold, XP, last hits, denies and **net worth**. Cumulative gold is never substituted for net worth.
+- `snapshots_minutes` contains exact observations at 10, 20 and 30 minutes. Matches that end earlier, missing samples, and misaligned timelines produce unavailable values; no interpolation is used.
+- `events` retains item purchases, kill/death timestamps, buybacks, objectives, Roshan/Aegis events and the player's data within detected teamfights. Objectives and Roshan events are match-wide context, not automatic player credit. Purchase time does not guarantee item completion.
+- `positioning` retains available lane positions and observer/sentry ward heatmaps, not an invented full movement trace.
 
-Failed, empty, or malformed history responses stop the job before existing data is changed. Individual unavailable details are reported without breaking the sync; a valid cached copy is retained when available. Each JSON file is written atomically. Detail responses must contain the correct match ID and this player's account ID. Old detail files are removed after successful history retrieval so the directory contains only the selected latest 12.
+Values use `{ "value": ..., "n": 0 or 1 }` per match. **Unavailable = `null`, `n=0`**; an observed zero or empty event log has `n=1`. Aggregate `n` counts matches with observed data, not event or timeline-point counts. Win/loss differences include both sample counts. `field_sample_counts` covers timelines, event logs and positioning. Item timing means include only matches with an observed purchase of that item. Raw K/D/A remains available for deathless games, but the divide-by-zero KDA ratio is null. Duration/event times are in seconds; lane efficiency is percent and participation is a fraction. The participation scalar is OpenDota's provided metric; the detected teamfight records are separately available.
 
-OpenDota can return valid basic match details without replay-parsed timelines. These responses are saved with `parsed: false` in the summary. The sync does not request replay parsing or fabricate missing fields. It retries these matches on future runs and preserves richer parsed cached data if the API later returns an unparsed copy. `source: cache` and `updated: false` distinguish retained data from a fresh API response.
+Comparisons are **descriptive correlations**, not proof of mistakes or causal effects. Hero, role, patch, duration, opponent quality and selection effects are not controlled. Missing replay data can bias samples. Shorter matches are excluded from later minute snapshots, so those comparison groups can differ.
 
-`detail_count_updated`, `detail_count_available`, and `detail_count_parsed` distinguish fresh downloads, available files, and parsed files. Missing details are explicitly listed with `available: false`; their raw file URL will not exist until data becomes available.
+## Replay coverage
 
-## Local use and checks
+Each match reports one of `full_replay`, `partial_replay`, `basic_only`, `history_only`, plus its parsed flag and missing core fields. The analysis `coverage` reports all category counts.
 
-Python 3.12+; no third-party packages or OpenDota API key required:
+A positive OpenDota parsed flag/version alone is not called complete. `full_replay` additionally requires aligned gold/XP/LH/denies/net-worth timelines, purchase/kill/death/buyback logs, lane positions, lane efficiency, participation, objectives and teamfights. This is a documented core coverage definition, not a claim that every possible replay field is present. Available fields are used even for partial matches. Optional fields still report their own sample counts.
+
+## Caching and parsing requests
+
+All existing detail files are retained permanently; there is no cache pruning. Complete cached replay details are never downloaded again unless `FORCE_REFRESH=true`. Basic or partial responses are checked at most daily for recent matches and weekly for older matches. Failed downloads have a six-hour cooldown. The richer parsed cached response is preserved if an API response becomes unparsed. `data/sync_state.json` persists checks, cooldowns and parse submissions, including jobs whose response may have been lost. It contains no credentials.
+
+Parsing is enabled by `REQUEST_PARSING=true`, with `MAX_PARSE_REQUESTS=3` (hard cap 3 per run). Only unparsed matches with a replay URL and a match end within a conservative seven-day window are candidates. This window is a local policy, not a promise of replay availability: OpenDota and Valve decide eligibility. Older matches keep their existing basic data and can still be checked for archived parsing on the weekly cooldown.
+
+The official [OpenDota API implementation/specification](https://github.com/odota/core/blob/master/svc/api/spec.ts) documents `POST /request/{match_id}` and says it costs **ten calls** for rate limiting. POSTs are spaced by 12 seconds, attempted only once per submission, and recorded **before** sending so a timeout cannot cause an immediate duplicate. Each match has a 48-hour resubmission cooldown and a maximum of three submissions. Returned job IDs and submission outcomes appear in the state/summary. A queued job does not mean parsing succeeded. Match details are checked again after six hours; subsequent parsed data is included automatically.
+
+No API key or OpenDota/Steam login is required by this client. If the service requires authorization, rejects a match, or rate-limits requests, the pipeline records the failure and does not bypass the restriction. HTTP 401/403 and exhausted 429 responses suspend further API calls during that run. Ordinary GETs are paced by 1.3 seconds, with bounded retries for transient errors and `Retry-After` support; long cooldowns defer to the next run. Parsing availability is not guaranteed.
+
+Failed, empty or invalid history retrieval stops before existing match data is changed. JSON files are replaced atomically. GitHub Actions serializes runs, tests error handling and analysis, validates the analysis by recomputing it from the cached raw data, then commits updates with its scoped `contents: write` token.
+
+## Local use
+
+Python 3.12+, standard library only:
 
 ```sh
 python3 -m unittest discover -s tests -v
@@ -32,6 +54,4 @@ python3 -u scripts/fetch.py
 python3 scripts/validate.py
 ```
 
-Configuration uses `DOTA_ACCOUNT_ID`, `MATCH_COUNT`, and `DETAIL_COUNT`, set explicitly in the workflow. The defaults are 467233306, 100, and 12. Counts must satisfy `1 <= DETAIL_COUNT <= MATCH_COUNT <= 100`.
-
-The workflow runs the error-handling tests, fetches data, validates match IDs, player membership, counts and parsing status, and commits changes using its scoped `contents: write` GitHub token. Runs are serialized to avoid conflicting pushes. No personal tokens are stored in this repository.
+`fetch.py` also generates the analysis. To regenerate it without API calls, run `python3 scripts/analysis.py`. Configuration: `DOTA_ACCOUNT_ID=467233306`, `MATCH_COUNT=100`, `DETAIL_COUNT=50`, `REQUEST_PARSING=true`, `MAX_PARSE_REQUESTS=3`, `FORCE_REFRESH=false`. The workflow sets the first five explicitly. No existing data files are deleted.

@@ -23,12 +23,16 @@ def detail(mid, version=22):
 
 
 class FetchTests(unittest.TestCase):
+    def setUp(self):
+        fetch.API_BLOCKED = False
+        fetch.LAST_ERROR = None
+
     def test_rate_limit_honors_retry_after(self):
         error = urllib.error.HTTPError('url', 429, 'limited', {'Retry-After': '7'}, None)
         with patch.object(fetch.urllib.request, 'urlopen', side_effect=[error, io.BytesIO(b'[]')]), \
                 patch.object(fetch.time, 'sleep') as sleep:
             self.assertEqual(fetch.fetch('/test'), [])
-            sleep.assert_called_once_with(7)
+            self.assertEqual(sleep.call_args_list[-1].args, (7,))
 
     def test_transient_errors_and_invalid_json_exhaust_retries(self):
         for error in [urllib.error.URLError('offline'),
@@ -51,7 +55,7 @@ class FetchTests(unittest.TestCase):
         error = urllib.error.HTTPError('url', 429, 'limited', {'Retry-After': '3600'}, None)
         with patch.object(fetch.urllib.request, 'urlopen', side_effect=error), patch.object(fetch.time, 'sleep') as sleep:
             self.assertIsNone(fetch.fetch('/test'))
-            sleep.assert_not_called()
+            sleep.assert_called_once_with(1.3)
 
     def test_failed_history_preserves_all_data(self):
         for history in [None, [], {'error': 'bad'}, [None], [match(1), match(1)]]:
@@ -64,22 +68,26 @@ class FetchTests(unittest.TestCase):
                 self.assertEqual(target.read_text(), '[{"existing": true}]')
                 self.assertFalse((pathlib.Path(temp) / 'summary.json').exists())
 
-    def test_all_modes_unparsed_missing_cached_and_stale_details(self):
+    def test_ranked_selection_cache_cooldowns_and_preservation(self):
         with tempfile.TemporaryDirectory() as temp, patch.object(fetch, 'OUT', pathlib.Path(temp)), \
-                patch.object(fetch, 'DETAIL_COUNT', 4), patch.object(fetch.time, 'sleep'):
+                patch.object(fetch, 'DETAIL_COUNT', 3), patch.dict('os.environ', {'REQUEST_PARSING': 'false'}):
             fetch.save(fetch.OUT / 'matches' / '2.json', detail(2))
-            fetch.save(fetch.OUT / 'matches' / '1.json', detail(1))
             fetch.save(fetch.OUT / 'matches' / '99.json', detail(99))
-            history = [match(1, 7), match(4), match(2), match(3)]
-            with patch.object(fetch, 'fetch', side_effect=[history, detail(4, None), None, None, detail(1, None)]):
+            history = [match(8), match(4, 7), match(3, 7), match(2, 7)]
+            ranked = [match(2, 7), match(4, 7), match(3, 7)]
+            with patch.object(fetch, 'fetch', side_effect=[history, ranked, detail(4, None), None, detail(2, None)]):
                 fetch.main()
             summary = json.loads((fetch.OUT / 'summary.json').read_text())
-            self.assertEqual([s['match_id'] for s in summary['detail_status']], [4, 3, 2, 1])
+            self.assertEqual([s['match_id'] for s in summary['detail_status']], [4, 3, 2])
             self.assertEqual(summary['detail_count_updated'], 1)
-            self.assertEqual(summary['detail_count_available'], 3)
-            self.assertEqual(summary['detail_count_parsed'], 2)
-            self.assertFalse((fetch.OUT / 'matches' / '99.json').exists())
-            self.assertEqual(json.loads((fetch.OUT / 'matches' / '1.json').read_text())['version'], 22)
+            self.assertEqual(summary['detail_count_available'], 2)
+            self.assertTrue((fetch.OUT / 'matches' / '99.json').exists())
+            self.assertEqual(json.loads((fetch.OUT / 'matches' / '2.json').read_text())['version'], 22)
+            validate.validate()
+            # A repeated run fetches only the two histories; detail cooldowns survive.
+            with patch.object(fetch, 'fetch', side_effect=[history, ranked]) as request:
+                fetch.main()
+                self.assertEqual(request.call_count, 2)
             validate.validate()
 
     def test_wrong_player_and_error_payload_rejected(self):
